@@ -1,0 +1,8 @@
+{
+  "name": "Commute Cost Optimizer",
+  "short_name": "commute-cost",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1"
+}
