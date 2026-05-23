@@ -105,7 +105,7 @@
 <meta name="twitter:image" content="https://appadaycreator.com/twitter-card.png">
 <meta name="twitter:site" content="@appadaycreator">
 </head>
-<body>
+<body><a href="#main" class="sr-only">本文へスキップ</a>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <header class="site-header">
@@ -121,9 +121,9 @@
         <div class="card">
           <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">🚃 通勤コスト最適化診断</h2>
           <label>片道距離（km）</label>
-          <input type="number" id="dist" placeholder="例: 15" min="0" step="0.1">
+          <input type="number" id="dist" placeholder="例: 15" min="0" step="0.1" aria-label="例: 15">
           <label style="margin-top:12px;">月の出勤日数</label>
-          <input type="number" id="days" placeholder="例: 20" min="1" max="31">
+          <input type="number" id="days" placeholder="例: 20" min="1" max="31" aria-label="例: 20">
           <label style="margin-top:12px;">利用中の交通手段（複数選択可）</label>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px;">
             <label><input type="checkbox" id="c-train" checked> 電車・バス</label>
@@ -132,7 +132,7 @@
             <label><input type="checkbox" id="c-walk"> 徒歩</label>
           </div>
           <label style="margin-top:12px;">現在の月間交通費（円）</label>
-          <input type="number" id="current-cost" placeholder="例: 12000" min="0">
+          <input type="number" id="current-cost" placeholder="例: 12000" min="0" aria-label="例: 12000">
           <button class="btn" style="margin-top:20px;" onclick="generate()">最適化診断する</button>
         </div>
         <div class="result" id="result" style="margin-top:16px;">
