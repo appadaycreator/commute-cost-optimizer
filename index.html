@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6366F1" />
     <title>通勤コスト最適化診断【無料】簡単・無料計算</title>
     <meta name="description" content="電車・バス・車・自転車の通勤コストを比較して最適な通勤方法を診断。登録不要・完全無料でご利用いただけます。">
     <link rel="canonical" href="https://appadaycreator.com/commute-cost-optimizer/">
@@ -12,6 +13,9 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:image" content="https://appadaycreator.com/assets/ogp-default.png">
+<meta property="og:site_name" content="appadaycreator" />
+<meta name="twitter:image" content="https://appadaycreator.com/assets/ogp-default.png" />
+<meta name="twitter:description" content="電車・バス・車・自転車の通勤コストを比較して最適な通勤方法を診断。登録不要・完全無料でご利用いただけます。" />
     <meta name="twitter:card" content="summary">
     <link rel="canonical" href="https://appadaycreator.com/commute-cost-optimizer/">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚃</text></svg>">
@@ -59,7 +63,17 @@
         }
         /* ── サービス固有CSS ── */
         .mode-row{display:flex;gap:8px;margin-bottom:8px;}.mode-row label{flex:1;font-size:13px;color:#555;}
-    </style>
+    
+@media print{
+  header,footer,nav,button,.no-print,
+  [class*="share"],[class*="affiliate"],[id*="share"],
+  [id*="affiliate"],[id*="banner"],
+  script,noscript{display:none!important}
+  body{background:#fff!important;color:#000!important;font-size:12pt}
+  [id*="result"],[id*="output"],[id*="advice"],[id*="diagnosis"],[class*="result"]{display:block!important}
+  a[href]::after{content:none!important}
+}
+</style>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -178,7 +192,7 @@
         <div style="margin:16px 0;padding:16px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;text-align:center;">
           <p style="font-size:13px;color:#1e40af;font-weight:bold;margin:0 0 8px;">🌐 ネット料金も見直してみませんか？</p>
           <p style="font-size:12px;color:#374151;margin:0 0 12px;">光ファイバー高速インターネット・最短即日開通！最大47,000円キャッシュバック</p>
-          <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ9+21AMQY+3HKU+1ZG8B6" rel="nofollow" target="_blank"
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ9+21AMQY+3HKU+1ZG8B6" rel="nofollow noopener noreferrer" target="_blank"
              style="display:inline-block;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none;">
             ＠T COM ヒカリを見てみる →
           </a>
