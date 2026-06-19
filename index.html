@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Consent Mode v2 -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});(function(){try{var k='cookie-consent-v2',o='cookie-consent';var c=localStorage.getItem(k);if(!c&&localStorage.getItem(o)==='1')c='granted';if(c){var s=c==='granted'?'granted':'denied';gtag('consent','update',{'analytics_storage':s,'ad_storage':s,'ad_user_data':s,'ad_personalization':s});}}catch(e){}})();</script>
+<!-- End Consent Mode v2 -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
 new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
@@ -12,7 +15,8 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#16A34A" />
     <title>通勤コスト最適化診断【無料】簡単・無料計算</title>
-    <meta name="description" content="電車・バス・車・自転車の通勤コストを比較して最適な通勤方法を診断。登録不要・完全無料でご利用いただけます。スマホ・PC対応。登録不要・完全無料。">
+    <meta name="description" content="電車・バス・車・自転車の通勤コストを比較して最適な通勤方法を診断">
+<meta name="author" content="AppADayCreator">
     <link rel="canonical" href="https://appadaycreator.com/commute-cost-optimizer/">
     <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -42,7 +46,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"通勤コスト最適化診断","description":"電車・バス・車・自転車の通勤コストを比較して最適な通勤方法を診断。登録不要・完全無料でご利用いただけます。","url":"https://appadaycreator.com/commute-cost-optimizer/","applicationCategory":"UtilityApplication","operatingSystem":"Any","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Organization","name":"AppADayCreator","url":"https://appadaycreator.com/"}}</script>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "通勤コスト最適化診断は無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、完全無料・登録不要でご利用いただけます。"}}, {"@type": "Question", "name": "何回でも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、回数制限なく何度でもご利用いただけます。"}}, {"@type": "Question", "name": "入力したデータはサーバーに送信されますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。すべての処理はブラウザ内で完結し、入力内容はサーバーへ送信されません。"}}, {"@type": "Question", "name": "スマートフォンでも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、スマートフォン・タブレット・PCすべてに最適化されています。"}}, {"@type": "Question", "name": "結果を保存・共有できますか？", "acceptedAnswer": {"@type": "Answer", "text": "スクリーンショットでの保存またはSNSシェアボタンからご共有いただけます。"}}]}</script>
+    
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"通勤コスト最適化診断【無料】簡単・無料計算の使い方","step":[{"@type":"HowToStep","position":1,"name":"必要事項を入力する","text":"フォームに必要な情報（数値・選択肢・条件）を入力または選択する"},{"@type":"HowToStep","position":2,"name":"診断・計算を実行する","text":"「診断する」「計算する」または「確認する」ボタンを押して結果を取得する"},{"@type":"HowToStep","position":3,"name":"結果・分析を確認する","text":"表示された診断結果・計算結果・グラフをじっくり確認する"},{"@type":"HowToStep","position":4,"name":"アドバイスを活用する","text":"結果に基づくアドバイスや提案を日常生活に取り入れる"},{"@type":"HowToStep","position":5,"name":"定期的に再チェックする","text":"生活変化に応じて定期的に再診断して進捗を追跡する"}]}</script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -75,7 +79,19 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         }
         /* ── サービス固有CSS ── */
         .mode-row{display:flex;gap:8px;margin-bottom:8px;}.mode-row label{flex:1;font-size:13px;color:#555;}
-    
+        input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; }
+        input[type="range"]::-webkit-slider-track { background: #e2e8f0; height: 8px; border-radius: 4px; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #16A34A; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        input[type="range"]::-moz-range-track { background: #e2e8f0; height: 8px; border-radius: 4px; }
+        input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: #16A34A; cursor: pointer; border: none; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        /* エラー状態のスタイル */
+        input.input-error, select.input-error { border-color: #ef4444 !important; background-color: #fef2f2; }
+        input.input-valid, select.input-valid { border-color: #16A34A !important; background-color: #f0fdf4; }
+        .error-message { display: block; color: #dc2626; font-size: 12px; margin-top: 6px; font-weight: 600; padding: 4px 8px; background: #fee2e2; border-radius: 4px; border-left: 3px solid #dc2626; }
+        /* checkbox フォーカス時のスタイル */
+        input[type="checkbox"]:focus-visible { outline: 3px solid #16A34A; outline-offset: 2px; }
+        input[type="checkbox"]:checked + span::before { background: #16A34A; }
+
 @media print{
   header,footer,nav,button,.no-print,
   [class*="share"],[class*="affiliate"],[id*="share"],
@@ -90,6 +106,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!important;height:0!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://appadaycreator.com/"},{"@type":"ListItem","position":2,"name":"計算機/お金","item":"https://appadaycreator.com/category/finance/"},{"@type":"ListItem","position":3,"name":"通勤コスト最適化診断簡単・無料計算","item":"https://appadaycreator.com/commute-cost-optimizer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"「通勤コスト最適化診断」は無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料・登録不要です。"}},{"@type":"Question","name":"スマートフォンでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、モバイル対応済みです。"}}]}</script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -126,10 +143,26 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
 
         <div class="card">
+          <!-- フォーム入力完了度の進捗 -->
+          <div id="form-progress" style="margin-bottom:16px;background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <p style="margin:0;font-size:12px;font-weight:600;color:#15803d;">入力完了度</p>
+              <span id="progress-text" style="font-size:12px;font-weight:700;color:#16A34A;">0/3</span>
+            </div>
+            <div style="background:#e0fdf4;border-radius:6px;height:8px;overflow:hidden;">
+              <div id="progress-bar" style="background:#16A34A;height:100%;width:0%;transition:width .3s ease;border-radius:6px;"></div>
+            </div>
+            <p style="margin:8px 0 0;font-size:11px;color:#4b5563;">※ 必須3項目（片道距離・出勤日数・交通手段）を入力すると「診断する」ボタンが有効になります</p>
+          </div>
           <div id="tool-desc-box" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem 1.75rem;margin:1.5rem 0">
   <p style="color:#374151;margin:0 0 .75rem;line-height:1.75;font-size:.92rem">通勤コスト最適化診断【無料】簡単・無料計算は、AppADayCreatorが提供する完全無料の診断・アドバイスツールです。登録・ログイン不要で、すぐにご利用いただけます。</p>
-  <p style="color:#374151;margin:0 0 .75rem;line-height:1.75;font-size:.92rem">【使い方】①いくつかの質問に答える → ②「診断する」ボタンをクリック → ③あなたに合ったアドバイスを表示します。</p>
-  <p style="color:#4b5563;margin:0;line-height:1.75;font-size:.9rem">当ツールで入力したデータはお使いのブラウザ内にのみ保存され、外部サーバーへ送信されることはありません。安心してご利用ください。</p>
+</div>
+<div style="background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:12px;margin-bottom:12px;font-size:13px;color:#856404;display:flex;gap:8px;align-items:flex-start;">
+  <span style="font-size:16px;flex-shrink:0;">ℹ️</span>
+  <div>
+    <strong style="display:block;margin-bottom:4px;">リアルタイムバリデーション</strong>
+    <p style="margin:0;line-height:1.6;">入力中に自動的に値をチェックします。エラーが表示されたら指摘された内容を修正してください。</p>
+  </div>
 </div>
 <div style="background:#f0f7ff;border:2px solid #bfdbfe;border-radius:12px;padding:1.5rem 1.75rem;margin:2rem 0">
   <h2 style="font-size:1.1rem;font-weight:800;color:#1e3a5f;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:2px solid #bfdbfe">通勤費最適化ツール — 交通費節約と定期代比較</h2>
@@ -184,7 +217,6 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       </tr>
     </tbody>
   </table>
-  <p style="font-size:.78rem;color:#6b7280;margin:.5rem 0 0">※ 記載データは各出典の公表時点の情報です。最新情報は各公的機関の公式サイトをご確認ください。</p>
 </div>
 <!-- r20-tool-links -->
 <div id="tool-disclaimer" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.875rem">
@@ -193,20 +225,65 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   <ul style="margin:0;padding-left:1.25rem;color:#4b5563;line-height:1.9"><li><a href="https://www.fsa.go.jp/policy/nisa2/about/index.html" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">金融庁「NISAについて」</a></li><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/index2.htm" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">国税庁「タックスアンサー」</a></li></ul>
 </div>
 <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">🚃 通勤コスト最適化診断</h2>
-          <label>片道距離（km）</label>
-          <input type="number" id="dist" placeholder="例: 15" min="0" step="0.1">
-          <label style="margin-top:12px;">月の出勤日数</label>
-          <input type="number" id="days" placeholder="例: 20" min="1" max="31">
-          <label style="margin-top:12px;">利用中の交通手段（複数選択可）</label>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px;">
-            <label><input type="checkbox" id="c-train" checked> 電車・バス</label>
-            <label><input type="checkbox" id="c-car"> 自家用車</label>
-            <label><input type="checkbox" id="c-bike"> 自転車</label>
-            <label><input type="checkbox" id="c-walk"> 徒歩</label>
+          <label style="display:flex;align-items:center;gap:4px;margin-top:0;">
+            <span>片道距離（km）</span>
+            <span style="background:#dc2626;color:white;font-weight:700;font-size:12px;padding:2px 6px;border-radius:3px;line-height:1;">必須</span>
+          </label>
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:4px;">
+            <input type="range" id="dist-slider" min="0" max="100" step="0.1" value="15" style="flex:1;min-height:auto;padding:0;border:none;cursor:pointer;" aria-label="片道距離（スライダー）" aria-describedby="dist-hint dist-error dist-value" required>
+            <input type="number" id="dist" placeholder="例：15km" min="0.1" max="100" step="0.1" value="15" inputmode="decimal" style="width:70px;text-align:center;" aria-label="片道距離（キロメートル）" aria-describedby="dist-hint dist-error" required>
+            <span id="dist-value" style="min-width:40px;text-align:right;font-weight:700;color:#16A34A;font-size:14px;">15km</span>
           </div>
-          <label style="margin-top:12px;">現在の月間交通費（円）</label>
-          <input type="number" id="current-cost" placeholder="例: 12000" min="0">
-          <button class="btn" style="margin-top:20px;" onclick="generate()">最適化診断する</button>
+          <small id="dist-hint" style="display:block;color:#6b7280;font-size:12px;margin-top:4px;line-height:1.5;background:#f3f4f6;padding:6px 8px;border-radius:4px;">💡 スライダー（左）で直感的に調整 / テキスト入力（右）で正確に入力。対応目安：5km（駅近）〜30km（郊外）。</small>
+          <div id="dist-error" class="error-message" role="alert" style="display:none;"></div>
+
+          <label style="display:flex;align-items:center;gap:4px;margin-top:14px;">
+            <span>月の出勤日数</span>
+            <span style="background:#dc2626;color:white;font-weight:700;font-size:12px;padding:2px 6px;border-radius:3px;line-height:1;">必須</span>
+          </label>
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:4px;">
+            <input type="range" id="days-slider" min="1" max="31" step="1" value="20" style="flex:1;min-height:auto;padding:0;border:none;cursor:pointer;" aria-label="月の出勤日数（スライダー）" aria-describedby="days-hint days-error days-value" required>
+            <input type="number" id="days" placeholder="例：20日" min="1" max="31" value="20" inputmode="numeric" style="width:60px;text-align:center;" aria-label="月の出勤日数（日）" aria-describedby="days-hint days-error" required>
+            <span id="days-value" style="min-width:40px;text-align:right;font-weight:700;color:#16A34A;font-size:14px;">20日</span>
+          </div>
+          <small id="days-hint" style="display:block;color:#6b7280;font-size:12px;margin-top:4px;line-height:1.5;background:#f3f4f6;padding:6px 8px;border-radius:4px;">💡 定期券 = 月20日以上（出勤がほぼ毎日）。テレワーク週3日 = 月10〜15日。スライダーで直感的に、テキスト入力で正確に設定できます。</small>
+          <div id="days-error" class="error-message" role="alert" style="display:none;"></div>
+
+          <label style="display:flex;align-items:center;gap:4px;margin-top:14px;margin-bottom:8px;">
+            <span>利用中の交通手段（複数選択可）</span>
+            <span style="background:#dc2626;color:white;font-weight:700;font-size:12px;padding:2px 6px;border-radius:3px;line-height:1;">必須</span>
+          </label>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:4px;margin-top:8px;" role="group" aria-label="交通手段の選択">
+            <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;background:#f9fafb;border:2px solid #e5e7eb;border-radius:6px;cursor:pointer;font-weight:400;transition:all .2s;"><input type="checkbox" id="c-train" checked aria-label="電車・バスを選択" aria-describedby="mode-error" style="cursor:pointer;" onchange="validateMode()"> 🚃 電車・バス</label>
+            <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;background:#f9fafb;border:2px solid #e5e7eb;border-radius:6px;cursor:pointer;font-weight:400;transition:all .2s;"><input type="checkbox" id="c-car" aria-label="自家用車を選択" aria-describedby="mode-error" style="cursor:pointer;" onchange="validateMode()"> 🚗 自家用車</label>
+            <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;background:#f9fafb;border:2px solid #e5e7eb;border-radius:6px;cursor:pointer;font-weight:400;transition:all .2s;"><input type="checkbox" id="c-bike" aria-label="自転車を選択" aria-describedby="mode-error" style="cursor:pointer;" onchange="validateMode()"> 🚲 自転車</label>
+            <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;background:#f9fafb;border:2px solid #e5e7eb;border-radius:6px;cursor:pointer;font-weight:400;transition:all .2s;"><input type="checkbox" id="c-walk" aria-label="徒歩を選択" aria-describedby="mode-error" style="cursor:pointer;" onchange="validateMode()"> 🚶 徒歩</label>
+          </div>
+          <small id="mode-hint" style="display:block;color:#6b7280;font-size:12px;margin-top:4px;line-height:1.5;background:#f3f4f6;padding:6px 8px;border-radius:4px;">💡 複数選択可能。比較したい交通手段をすべてチェックして「最適化診断する」を押すと、各手段のコストが自動計算されます。</small>
+          <div id="mode-error" class="error-message" role="alert" style="display:none;"></div>
+
+          <label style="margin-top:14px;display:flex;align-items:center;gap:4px;">
+            <span>現在の月間交通費（円）</span>
+            <span style="background:#e5e7eb;color:#4b5563;font-weight:600;font-size:11px;padding:2px 5px;border-radius:3px;line-height:1;">任意</span>
+          </label>
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:4px;">
+            <input type="range" id="cost-slider" min="0" max="150000" step="500" value="0" style="flex:1;min-height:auto;padding:0;border:none;cursor:pointer;" aria-label="月間交通費（スライダー）" aria-describedby="cost-hint cost-error cost-value">
+            <input type="number" id="current-cost" placeholder="例：12000" min="0" max="150000" step="100" inputmode="numeric" style="width:80px;text-align:center;" aria-label="月間交通費（円）" aria-describedby="cost-hint cost-error">
+            <span id="cost-value" style="min-width:60px;text-align:right;font-weight:700;color:#6b7280;font-size:14px;">0円</span>
+          </div>
+          <small id="cost-hint" style="display:block;color:#6b7280;font-size:12px;margin-top:4px;line-height:1.5;background:#f3f4f6;padding:6px 8px;border-radius:4px;">💡 給与明細・定期券の料金表から月額を確認して入力。削減効果を正確に計算するために重要です。スライダーまたは右の欄で入力できます。</small>
+          <div id="cost-error" class="error-message" role="alert" style="display:none;"></div>
+
+          <label style="margin-top:14px;display:flex;align-items:center;gap:4px;">
+            <span>📍 目標月間交通費（円）</span>
+            <span style="background:#e5e7eb;color:#4b5563;font-weight:600;font-size:11px;padding:2px 5px;border-radius:3px;line-height:1;">任意</span>
+          </label>
+          <input type="number" id="target-cost" placeholder="例：10000" min="0" max="100000" step="100" inputmode="numeric" aria-label="目標月間交通費（円）" aria-describedby="target-hint target-error" onchange="validateTargetCost()">
+          <small id="target-hint" style="display:block;color:#6b7280;font-size:12px;margin-top:4px;line-height:1.5;background:#f3f4f6;padding:6px 8px;border-radius:4px;">💡 削減目標額を入力すると達成度がグラフに表示されます。例：現在12,000円 → 目標10,000円（月2,000円・年24,000円削減）。未入力でも診断は実行できます。</small>
+          <div id="target-error" class="error-message" role="alert" style="display:none;"></div>
+
+          <button id="submit-btn" class="btn" style="margin-top:22px;opacity:0.5;cursor:not-allowed;" disabled aria-label="必須項目を入力して通勤コスト最適化診断を実行" onclick="generate()">最適化診断する</button>
+          <p style="font-size:12px;color:#999;margin-top:8px;">※ 必須項目（<span style="color:#ef4444;font-weight:700;">*</span>）を入力してください。入力中にリアルタイムでバリデーションが実行されます。</p>
         </div>
         <div class="result" id="result" style="margin-top:16px;">
           <div class="card">
@@ -243,6 +320,56 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <ins class="adsbygoogle" style="display:block;min-height:90px;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
 
+        <!-- 通勤手段コスト比較表 -->
+        <div class="card" style="margin-top:8px;">
+          <h2 style="font-size:15px;font-weight:700;margin-bottom:12px;color:#374151;">📊 通勤手段 コスト比較表（片道15km・月20日出勤の目安）</h2>
+          <div style="overflow-x:auto;">
+            <table style="width:100%;border-collapse:collapse;font-size:13px;">
+              <thead>
+                <tr style="background:#f0fdf4;border-bottom:2px solid #16A34A;">
+                  <th style="padding:8px 10px;text-align:left;color:#1f2937;font-weight:700;">交通手段</th>
+                  <th style="padding:8px 10px;text-align:right;color:#1f2937;font-weight:700;">月額目安</th>
+                  <th style="padding:8px 10px;text-align:right;color:#1f2937;font-weight:700;">年額目安</th>
+                  <th style="padding:8px 10px;text-align:left;color:#1f2937;font-weight:700;min-width:120px;">向いているケース</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #e5e7eb;">
+                  <td style="padding:8px 10px;font-weight:600;">🚃 電車・バス（定期券）</td>
+                  <td style="padding:8px 10px;text-align:right;color:#16A34A;font-weight:700;">約7,500円〜</td>
+                  <td style="padding:8px 10px;text-align:right;">約90,000円〜</td>
+                  <td style="padding:8px 10px;color:#6b7280;font-size:12px;">月16日以上の出勤に有利</td>
+                </tr>
+                <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+                  <td style="padding:8px 10px;font-weight:600;">🚃 電車・バス（ICカード都度払い）</td>
+                  <td style="padding:8px 10px;text-align:right;">約9,000円〜</td>
+                  <td style="padding:8px 10px;text-align:right;">約108,000円〜</td>
+                  <td style="padding:8px 10px;color:#6b7280;font-size:12px;">テレワーク週2〜3日に向き</td>
+                </tr>
+                <tr style="border-bottom:1px solid #e5e7eb;">
+                  <td style="padding:8px 10px;font-weight:600;">🚗 自家用車</td>
+                  <td style="padding:8px 10px;text-align:right;color:#ef4444;">約17,000円〜</td>
+                  <td style="padding:8px 10px;text-align:right;">約204,000円〜</td>
+                  <td style="padding:8px 10px;color:#6b7280;font-size:12px;">駐車場無料の郊外・公共交通不便地域</td>
+                </tr>
+                <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+                  <td style="padding:8px 10px;font-weight:600;">🚲 自転車</td>
+                  <td style="padding:8px 10px;text-align:right;color:#16A34A;font-weight:700;">約1,500円〜</td>
+                  <td style="padding:8px 10px;text-align:right;">約18,000円〜</td>
+                  <td style="padding:8px 10px;color:#6b7280;font-size:12px;">片道10km以内・健康も重視したい方</td>
+                </tr>
+                <tr style="background:#f9fafb;">
+                  <td style="padding:8px 10px;font-weight:600;">🚶 徒歩</td>
+                  <td style="padding:8px 10px;text-align:right;color:#16A34A;font-weight:700;">0円</td>
+                  <td style="padding:8px 10px;text-align:right;">0円</td>
+                  <td style="padding:8px 10px;color:#6b7280;font-size:12px;">片道5km以内・運動効果も期待できる</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:11px;color:#6b7280;margin-top:8px;">※ 概算値。実際のコストは距離・路線・ガソリン価格等により異なります。上記フォームで実際の数値を入力して正確に計算できます。</p>
+        </div>
+
         <!-- 使い方セクション -->
         <div class="card" style="margin-top:8px;background:#f8fafc;">
             <h2 style="font-size:15px;font-weight:700;margin-bottom:12px;color:#374151;">📖 使い方</h2>
@@ -259,25 +386,25 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <div class="card" style="margin-top:8px;">
             <h2 style="font-size:15px;font-weight:700;margin-bottom:14px;color:#374151;">❓ よくある質問</h2>
             <div style="display:flex;flex-direction:column;gap:14px;">
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 通勤コスト最適化診断は無料で使えますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、完全無料・登録不要でご利用いただけます。</p>
+            <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px;">
+              <p style="font-weight:700;color:#1f2937;margin:0 0 6px;font-size:14px;">Q. 電車と車、どちらが通勤費が安いですか？</p>
+              <p style="color:#6b7280;margin:0;font-size:13px;line-height:1.7">A. 都市部では電車・バスが安く、駐車場不要の郊外では車が安い場合があります。本ツールで距離・出勤日数を入力してリアルタイム比較が可能です。車の場合はガソリン代＋駐車場代の合計で判断してください。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 何回でも使えますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、回数制限なく何度でもご利用いただけます。</p>
+            <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px;">
+              <p style="font-weight:700;color:#1f2937;margin:0 0 6px;font-size:14px;">Q. テレワーク導入で定期券は不要になりますか？</p>
+              <p style="color:#6b7280;margin:0;font-size:13px;line-height:1.7">A. 月の出勤日数が15日未満になると、都度ICカード払いの方が定期券より安くなるケースが多いです。週2〜3日テレワークの場合はぜひ本ツールで損益分岐点を確認してください。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 入力したデータはサーバーに送信されますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: いいえ。すべての処理はブラウザ内で完結し、入力内容はサーバーへ送信されません。</p>
+            <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px;">
+              <p style="font-weight:700;color:#1f2937;margin:0 0 6px;font-size:14px;">Q. 自転車通勤に切り替えると年間いくら節約できますか？</p>
+              <p style="color:#6b7280;margin:0;font-size:13px;line-height:1.7">A. 月1万円の交通費を0円にできれば年間12万円の節約です。ただし自転車のメンテナンス費（年間1〜3万円）や雨天時の交通費も考慮が必要です。片道5km以内なら自転車通勤が最もコスパに優れます。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: スマートフォンでも使えますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、スマートフォン・タブレット・PCすべてに最適化されています。</p>
+            <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px;">
+              <p style="font-weight:700;color:#1f2937;margin:0 0 6px;font-size:14px;">Q. 通勤費の会社支給上限（非課税限度額）はいくらですか？</p>
+              <p style="color:#6b7280;margin:0;font-size:13px;line-height:1.7">A. 電車・バス通勤は月15万円まで非課税で支給可能（2024年現在）。マイカー・自転車通勤は片道距離に応じて2,000〜31,600円が非課税上限です。会社の規定と合わせて確認してください。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 結果を保存・共有できますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: スクリーンショットでの保存またはSNSシェアボタンからご共有いただけます。</p>
+            <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px;">
+              <p style="font-weight:700;color:#1f2937;margin:0 0 6px;font-size:14px;">Q. 計算結果はどのくらい正確ですか？</p>
+              <p style="color:#6b7280;margin:0;font-size:13px;line-height:1.7">A. 概算値（参考値）として活用してください。電車運賃は「距離×15円＋150円」で概算しています。実際の運賃はルートや会社によって異なるため、乗換案内や定期券窓口での正確な金額をご確認ください。</p>
             </div>
             </div>
         </div>
@@ -292,25 +419,21 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
 
         <!-- 免責事項 -->
-        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px;margin:8px 0;font-size:12px;color:#92400e;">
-            <strong>⚠️ 免責事項</strong>：本ツールの計算・診断結果はあくまで参考情報です。医療・法律・税務・投資等の専門的判断が必要な場合は、必ず資格を持つ専門家にご相談ください。本サービスの利用により生じた損害について、当サービスは一切の責任を負いません。
-        </div>
+        <p style="font-size:11px;color:#92400e;margin:6px 0">⚠️ 本ツールの結果は参考情報です。専門的判断は資格を持つ専門家にご相談ください。</p>
     
 <div style="background:#f8faff;border:1px solid #e0e7ff;border-radius:.75rem;padding:1.25rem 1.5rem;margin:1.5rem auto;max-width:740px">
   <p style="font-weight:700;font-size:.9rem;margin:0 0 .75rem;color:#3730a3">📋 このツールの詳細</p>
   <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0 0 .5rem">本ツールは、通勤コスト最適化診断簡単・計算を手軽に利用できる無料Webサービスです。登録不要でブラウザから直接ご利用いただけます。</p>
-  <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0 0 .5rem">スマートフォン・タブレット・PCのすべてに対応したレスポンシブデザインです。入力データはブラウザ内のみで処理・保存され、外部サーバーに送信されることはありません。</p>
-  <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0">計算・診断の結果はあくまでも参考値です。重要な意思決定の際は専門家・公式機関にもご相談ください。このツールの利用は無料・無制限です。</p>
 </div>
 <section aria-labelledby="faq-h" class="bg-white rounded-2xl shadow-md p-4 mb-4" style="max-width:740px;margin-left:auto;margin-right:auto">
   <h2 id="faq-h" style="font-size:1.05rem;font-weight:700;margin-bottom:12px;border-left:4px solid #4f46e5;padding-left:10px;">よくある質問</h2>
   <dl style="line-height:1.8;">
-    <dt style="font-weight:600;margin-top:12px;">Q: この計算ツールはどんな場面で役立ちますか？</dt>
-    <dd style="margin-left:16px;color:#374151;">通勤コスト最適化簡単・無料計算に関する費用・数値を手軽に試算できます。複数パターンを試して比較検討にご活用ください。</dd>
-    <dt style="font-weight:600;margin-top:12px;">Q: 計算結果の精度はどの程度ですか？</dt>
-    <dd style="margin-left:16px;color:#374151;">一般的な基準値をもとにした目安です。実際の結果は個人の状況・条件により異なります。重要な意思決定の際は専門家にもご相談ください。</dd>
-    <dt style="font-weight:600;margin-top:12px;">Q: スマートフォンでも使えますか？</dt>
-    <dd style="margin-left:16px;color:#374151;">はい、PC・スマートフォン・タブレットすべてに対応しています。ブラウザから登録不要・完全無料でご利用いただけます。</dd>
+    <dt style="font-weight:700;color:#1f2937;font-size:.9rem;margin-top:12px;">Q. 定期券は1ヶ月・3ヶ月・6ヶ月どれが一番お得ですか？</dt>
+    <dd style="color:#4b5563;font-size:.875rem;margin:4px 0 0 1rem;line-height:1.75">A. 一般的に6ヶ月定期が最も割引率が高く（約15〜20%引き）、3ヶ月定期が次点です。ただし転居・転職の可能性がある場合は短期定期の方がリスクが低いです。本ツールで月額換算コストを比較して判断してください。</dd>
+    <dt style="font-weight:700;color:#1f2937;font-size:.9rem;margin-top:14px;">Q. 引越しして職場に近づくとどれくらい節約できますか？</dt>
+    <dd style="color:#4b5563;font-size:.875rem;margin:4px 0 0 1rem;line-height:1.75">A. 片道30km→10kmに短縮すると電車通勤で月5,000〜10,000円の削減が見込めます。年間6〜12万円の節約と時間節約を引越しコストと比較して判断するのがおすすめです。</dd>
+    <dt style="font-weight:700;color:#1f2937;font-size:.9rem;margin-top:14px;">Q. 副業の交通費は確定申告で経費になりますか？</dt>
+    <dd style="color:#4b5563;font-size:.875rem;margin:4px 0 0 1rem;line-height:1.75">A. 副業（事業所得・雑所得）に関連する移動費は確定申告で経費（旅費交通費）として計上できます。本業の通勤費は給与所得控除に含まれるため別途計上不要です。詳細は国税庁または税理士にご確認ください。</dd>
   </dl>
 </section>
 <!-- r28-tool-expand -->
@@ -348,13 +471,155 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       document.getElementById('days').value = 20;
       loadHistory();
       loadLastData();
+
+      // フォーム完了度監視関数
+      function updateFormProgress() {
+        const dist = parseFloat(document.getElementById('dist').value);
+        const days = parseInt(document.getElementById('days').value);
+        const modes = [];
+        if (document.getElementById('c-train').checked) modes.push('train');
+        if (document.getElementById('c-car').checked) modes.push('car');
+        if (document.getElementById('c-bike').checked) modes.push('bike');
+        if (document.getElementById('c-walk').checked) modes.push('walk');
+
+        // 必須項目の完了度をカウント（最大3）
+        let completed = 0;
+        if (!isNaN(dist) && dist > 0 && dist <= 100) completed++;
+        if (!isNaN(days) && days >= 1 && days <= 31) completed++;
+        if (modes.length > 0) completed++;
+
+        // プログレスバーを更新
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+        const percentage = (completed / 3) * 100;
+        progressBar.style.width = percentage + '%';
+        progressText.textContent = completed + '/3';
+
+        // 送信ボタンの状態を管理
+        const submitBtn = document.getElementById('submit-btn');
+        if (completed === 3) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          submitBtn.style.cursor = 'pointer';
+        } else {
+          submitBtn.disabled = true;
+          submitBtn.style.opacity = '0.5';
+          submitBtn.style.cursor = 'not-allowed';
+        }
+      }
+
+      // スライダーと入力欄の同期
+      const distInput = document.getElementById('dist');
+      const distSlider = document.getElementById('dist-slider');
+      const daysInput = document.getElementById('days');
+      const daysSlider = document.getElementById('days-slider');
+
+      if (distSlider && distInput) {
+        distSlider.addEventListener('input', (e) => {
+          distInput.value = e.target.value;
+          const valueDisplay = document.getElementById('dist-value');
+          valueDisplay.textContent = e.target.value + 'km';
+          // 数値表示にフラッシュエフェクト
+          valueDisplay.style.transition = 'none';
+          valueDisplay.style.transform = 'scale(1.1)';
+          setTimeout(() => {
+            valueDisplay.style.transition = 'transform .2s ease-out';
+            valueDisplay.style.transform = 'scale(1)';
+          }, 0);
+          validateDist();
+          updateFormProgress();
+        });
+        distInput.addEventListener('input', (e) => {
+          distSlider.value = e.target.value;
+          const valueDisplay = document.getElementById('dist-value');
+          valueDisplay.textContent = e.target.value + 'km';
+          valueDisplay.style.transition = 'none';
+          valueDisplay.style.transform = 'scale(1.1)';
+          setTimeout(() => {
+            valueDisplay.style.transition = 'transform .2s ease-out';
+            valueDisplay.style.transform = 'scale(1)';
+          }, 0);
+          validateDist();
+          updateFormProgress();
+        });
+      }
+
+      if (daysSlider && daysInput) {
+        daysSlider.addEventListener('input', (e) => {
+          daysInput.value = e.target.value;
+          const valueDisplay = document.getElementById('days-value');
+          valueDisplay.textContent = e.target.value + '日';
+          // 数値表示にフラッシュエフェクト
+          valueDisplay.style.transition = 'none';
+          valueDisplay.style.transform = 'scale(1.1)';
+          setTimeout(() => {
+            valueDisplay.style.transition = 'transform .2s ease-out';
+            valueDisplay.style.transform = 'scale(1)';
+          }, 0);
+          validateDays();
+          updateFormProgress();
+        });
+        daysInput.addEventListener('input', (e) => {
+          daysSlider.value = e.target.value;
+          const valueDisplay = document.getElementById('days-value');
+          valueDisplay.textContent = e.target.value + '日';
+          valueDisplay.style.transition = 'none';
+          valueDisplay.style.transform = 'scale(1.1)';
+          setTimeout(() => {
+            valueDisplay.style.transition = 'transform .2s ease-out';
+            valueDisplay.style.transform = 'scale(1)';
+          }, 0);
+          validateDays();
+          updateFormProgress();
+        });
+      }
+
+      const costInput = document.getElementById('current-cost');
+      const costSlider = document.getElementById('cost-slider');
+      if (costSlider && costInput) {
+        costSlider.addEventListener('input', (e) => {
+          costInput.value = e.target.value;
+          const displayValue = parseInt(e.target.value);
+          document.getElementById('cost-value').textContent = displayValue.toLocaleString() + '円';
+          document.getElementById('cost-value').style.color = displayValue > 0 ? '#16A34A' : '#6b7280';
+          validateCost();
+        });
+        costInput.addEventListener('input', (e) => {
+          const v = parseInt(e.target.value) || 0;
+          costSlider.value = Math.min(v, 150000);
+          document.getElementById('cost-value').textContent = v.toLocaleString() + '円';
+          document.getElementById('cost-value').style.color = v > 0 ? '#16A34A' : '#6b7280';
+          validateCost();
+        });
+      }
+      document.getElementById('target-cost').addEventListener('input', validateTargetCost);
+      document.getElementById('c-train').addEventListener('change', () => {
+        validateMode();
+        updateFormProgress();
+      });
+      document.getElementById('c-car').addEventListener('change', () => {
+        validateMode();
+        updateFormProgress();
+      });
+      document.getElementById('c-bike').addEventListener('change', () => {
+        validateMode();
+        updateFormProgress();
+      });
+      document.getElementById('c-walk').addEventListener('change', () => {
+        validateMode();
+        updateFormProgress();
+      });
+
+      // 初期状態の更新
+      updateFormProgress();
     });
 
-    function saveData(dist, days, currentCost, modes) {
+    function saveData(dist, days, currentCost, targetCost, modes) {
       const data = {
         dist: parseFloat(dist),
         days: parseInt(days),
         currentCost: parseInt(currentCost) || 0,
+        targetCost: parseInt(targetCost) || 0,
         modes: modes,
         timestamp: new Date().toLocaleString('ja-JP')
       };
@@ -370,8 +635,19 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       if (history.length > 0) {
         const last = history[0];
         document.getElementById('dist').value = last.dist;
+        document.getElementById('dist-slider').value = last.dist;
+        document.getElementById('dist-value').textContent = last.dist + 'km';
         document.getElementById('days').value = last.days;
+        document.getElementById('days-slider').value = last.days;
+        document.getElementById('days-value').textContent = last.days + '日';
         document.getElementById('current-cost').value = last.currentCost;
+        if (document.getElementById('cost-slider')) {
+          document.getElementById('cost-slider').value = Math.min(last.currentCost, 150000);
+          const costVal = last.currentCost || 0;
+          document.getElementById('cost-value').textContent = costVal.toLocaleString() + '円';
+          document.getElementById('cost-value').style.color = costVal > 0 ? '#16A34A' : '#6b7280';
+        }
+        document.getElementById('target-cost').value = last.targetCost || '';
         document.getElementById('c-train').checked = last.modes.includes('train');
         document.getElementById('c-car').checked = last.modes.includes('car');
         document.getElementById('c-bike').checked = last.modes.includes('bike');
@@ -401,8 +677,17 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       if (index < 0 || index >= history.length) return;
       const item = history[index];
       document.getElementById('dist').value = item.dist;
+      document.getElementById('dist-slider').value = item.dist;
+      document.getElementById('dist-value').textContent = item.dist + 'km';
       document.getElementById('days').value = item.days;
+      document.getElementById('days-slider').value = item.days;
+      document.getElementById('days-value').textContent = item.days + '日';
       document.getElementById('current-cost').value = item.currentCost;
+      if (document.getElementById('cost-slider')) {
+        document.getElementById('cost-slider').value = Math.min(item.currentCost, 150000);
+        document.getElementById('cost-value').textContent = (item.currentCost || 0).toLocaleString() + '円';
+        document.getElementById('cost-value').style.color = item.currentCost > 0 ? '#16A34A' : '#6b7280';
+      }
       document.getElementById('c-train').checked = item.modes.includes('train');
       document.getElementById('c-car').checked = item.modes.includes('car');
       document.getElementById('c-bike').checked = item.modes.includes('bike');
@@ -479,12 +764,230 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       });
     }
 
+    function clearErrors() {
+      const errorElements = ['dist-error', 'days-error', 'mode-error', 'cost-error'];
+      errorElements.forEach(id => {
+        const elem = document.getElementById(id);
+        if (elem) {
+          elem.style.display = 'none';
+          elem.textContent = '';
+          elem.classList.remove('error-message');
+        }
+      });
+      // 入力フィールドの色もリセット
+      const fields = ['dist', 'days', 'current-cost', 'target-cost'];
+      fields.forEach(id => {
+        const field = document.getElementById(id);
+        if (field) {
+          field.classList.remove('input-error', 'input-valid');
+        }
+      });
+    }
+
+    function showError(elementId, message) {
+      const elem = document.getElementById(elementId);
+      elem.textContent = message;
+      elem.style.display = 'block';
+      elem.classList.add('error-message');
+      // 対応する入力フィールドにエラースタイルを適用
+      if (elementId === 'dist-error') {
+        document.getElementById('dist').classList.add('input-error');
+      } else if (elementId === 'days-error') {
+        document.getElementById('days').classList.add('input-error');
+      } else if (elementId === 'cost-error') {
+        document.getElementById('current-cost').classList.add('input-error');
+      }
+    }
+
+    function setFieldValid(fieldId) {
+      const field = document.getElementById(fieldId);
+      if (field) {
+        field.classList.remove('input-error');
+        field.classList.add('input-valid');
+      }
+    }
+
+    function setFieldInvalid(fieldId) {
+      const field = document.getElementById(fieldId);
+      if (field) {
+        field.classList.remove('input-valid');
+        field.classList.add('input-error');
+      }
+    }
+
+    function validateDist() {
+      const dist = parseFloat(document.getElementById('dist').value);
+      const elem = document.getElementById('dist-error');
+      const input = document.getElementById('dist');
+      if (isNaN(dist) || dist === '') {
+        elem.textContent = '⚠️ 距離を入力してください（0〜100km）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('dist');
+        return false;
+      } else if (dist <= 0) {
+        elem.textContent = '⚠️ 距離は1km以上である必要があります（現在: ' + dist + 'km）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('dist');
+        return false;
+      } else if (dist > 100) {
+        elem.textContent = '⚠️ 距離は100km以下である必要があります（現在: ' + dist + 'km）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('dist');
+        return false;
+      } else {
+        elem.style.display = 'none';
+        setFieldValid('dist');
+        return true;
+      }
+    }
+
+    function validateDays() {
+      const days = parseInt(document.getElementById('days').value);
+      const elem = document.getElementById('days-error');
+      const input = document.getElementById('days');
+      if (isNaN(days) || days === '') {
+        elem.textContent = '⚠️ 出勤日数を入力してください（1〜31日）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('days');
+        return false;
+      } else if (days < 1 || days > 31) {
+        elem.textContent = '⚠️ 出勤日数は1日以上31日以下である必要があります（現在: ' + days + '日）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('days');
+        return false;
+      } else {
+        elem.style.display = 'none';
+        setFieldValid('days');
+        return true;
+      }
+    }
+
+    function validateMode() {
+      const modes = [];
+      if (document.getElementById('c-train').checked) modes.push('train');
+      if (document.getElementById('c-car').checked) modes.push('car');
+      if (document.getElementById('c-bike').checked) modes.push('bike');
+      if (document.getElementById('c-walk').checked) modes.push('walk');
+      const elem = document.getElementById('mode-error');
+
+      // チェックボックスのラベルの視覚的フィードバック
+      const labels = document.querySelectorAll('[role="group"] label');
+      labels.forEach(label => {
+        const input = label.querySelector('input[type="checkbox"]');
+        if (input && input.checked) {
+          label.style.background = '#dcfce7';
+          label.style.borderColor = '#16A34A';
+          label.style.borderWidth = '2px';
+        } else {
+          label.style.background = '#f9fafb';
+          label.style.borderColor = '#e5e7eb';
+          label.style.borderWidth = '2px';
+        }
+      });
+
+      if (modes.length === 0) {
+        elem.textContent = '⚠️ 少なくとも1つの交通手段を選択してください（4つまで選択可能）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        return false;
+      } else {
+        elem.style.display = 'none';
+        elem.classList.remove('error-message');
+        return true;
+      }
+    }
+
+    function validateCost() {
+      const current = parseInt(document.getElementById('current-cost').value) || 0;
+      const elem = document.getElementById('cost-error');
+      const input = document.getElementById('current-cost');
+      if (current < 0 || current > 150000) {
+        elem.textContent = '⚠️ 月間交通費は0円以上150,000円以下である必要があります（現在: ' + current + '円）';
+        elem.style.display = 'block';
+        elem.classList.add('error-message');
+        setFieldInvalid('current-cost');
+        return false;
+      } else {
+        elem.style.display = 'none';
+        elem.classList.remove('error-message');
+        setFieldValid('current-cost');
+        return true;
+      }
+    }
+
+    function validateTargetCost() {
+      const target = parseInt(document.getElementById('target-cost').value) || 0;
+      const input = document.getElementById('target-cost');
+      const elem = document.getElementById('target-error');
+      if (target === 0) {
+        input.classList.remove('input-error', 'input-valid');
+        if (elem) { elem.style.display = 'none'; elem.textContent = ''; }
+        return true;
+      } else if (target < 0) {
+        setFieldInvalid('target-cost');
+        if (elem) { elem.textContent = '⚠️ 目標交通費は0円以上で入力してください'; elem.style.display = 'block'; }
+        return false;
+      } else if (target > 100000) {
+        setFieldInvalid('target-cost');
+        if (elem) { elem.textContent = '⚠️ 目標交通費は100,000円以下で入力してください（現在: ' + target.toLocaleString() + '円）'; elem.style.display = 'block'; }
+        return false;
+      } else {
+        setFieldValid('target-cost');
+        if (elem) { elem.style.display = 'none'; elem.textContent = ''; }
+        return true;
+      }
+    }
+
+    function validate() {
+      clearErrors();
+      let isValid = true;
+
+      const dist = parseFloat(document.getElementById('dist').value);
+      if (isNaN(dist) || dist <= 0) {
+        showError('dist-error', '片道距離は1km以上100km以下で入力してください');
+        isValid = false;
+      } else if (dist > 100) {
+        showError('dist-error', '片道距離は100km以下で入力してください');
+        isValid = false;
+      }
+
+      const days = parseInt(document.getElementById('days').value);
+      if (isNaN(days) || days < 1 || days > 31) {
+        showError('days-error', '出勤日数は1日以上31日以下で入力してください');
+        isValid = false;
+      }
+
+      const modes = [];
+      if (document.getElementById('c-train').checked) modes.push('train');
+      if (document.getElementById('c-car').checked) modes.push('car');
+      if (document.getElementById('c-bike').checked) modes.push('bike');
+      if (document.getElementById('c-walk').checked) modes.push('walk');
+      if (modes.length === 0) {
+        showError('mode-error', '少なくとも1つの交通手段を選択してください');
+        isValid = false;
+      }
+
+      const current = parseInt(document.getElementById('current-cost').value) || 0;
+      if (current < 0 || current > 150000) {
+        showError('cost-error', '月間交通費は0円以上150,000円以下で入力してください');
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
     function generate() {
+      if (!validate()) return;
+
       const dist = parseFloat(document.getElementById('dist').value);
       const days = parseInt(document.getElementById('days').value);
       const current = parseInt(document.getElementById('current-cost').value) || 0;
-      if (isNaN(dist) || dist <= 0) { alert('片道距離を入力してください'); return; }
-      if (isNaN(days) || days < 1) { alert('出勤日数を入力してください'); return; }
+      const target = parseInt(document.getElementById('target-cost').value) || 0;
 
       const modes = [];
       const costs = [];
@@ -520,6 +1023,21 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
           <span style="font-weight:700;color:${i===0?BTN_COLOR:'#333'};">¥${c.monthly.toLocaleString()}/月</span>
         </div>`).join('');
 
+      if (target > 0) {
+        const achievement = best.monthly <= target ? 100 : Math.round((target / best.monthly) * 100);
+        const achievementColor = best.monthly <= target ? '#16A34A' : '#f59e0b';
+        html += `<div style="margin-top:12px;padding:12px;background:#f0fdf4;border:2px solid ${achievementColor};border-radius:8px;">
+          <p style="margin:0 0 8px;font-size:12px;color:#666;">📍 目標達成度</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="flex:1;background:#e2e8f0;border-radius:8px;height:12px;overflow:hidden;">
+              <div style="background:${achievementColor};height:100%;width:${Math.min(achievement, 100)}%;"></div>
+            </div>
+            <span style="font-weight:700;color:${achievementColor};font-size:14px;min-width:40px;">${achievement}%</span>
+          </div>
+          ${best.monthly <= target ? `<p style="margin:6px 0 0;font-size:11px;color:#16A34A;font-weight:600;">✅ 目標を達成しました！</p>` : `<p style="margin:6px 0 0;font-size:11px;color:#f59e0b;">あと ¥${(best.monthly - target).toLocaleString()} の削減で目標達成</p>`}
+        </div>`;
+      }
+
       if (saving !== null && saving > 0) {
         html += `<div style="margin-top:12px;padding:12px;background:#ecfdf5;border-radius:8px;text-align:center;">
           <span style="font-weight:700;color:#16A34A;">年間 ¥${(saving*12).toLocaleString()} の節約が見込めます！</span>
@@ -527,42 +1045,85 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       }
       html += `<p style="font-size:12px;color:#999;margin-top:12px;">※概算値です。実際の運賃・費用は各機関にご確認ください。</p>`;
 
+      // M7: シミュレーション結果の計算
+      const simulations = [];
+      const patterns = [
+        {label: '距離-5km', distMod: -5, daysMod: 0},
+        {label: '現在の設定', distMod: 0, daysMod: 0},
+        {label: '距離+5km', distMod: 5, daysMod: 0},
+        {label: '出勤日-5日', distMod: 0, daysMod: -5},
+        {label: '出勤日+5日', distMod: 0, daysMod: 5}
+      ];
+
+      patterns.forEach(p => {
+        const simDist = Math.max(0.1, dist + p.distMod);
+        const simDays = Math.max(1, Math.min(31, days + p.daysMod));
+        let simBestCost = Infinity;
+
+        if (document.getElementById('c-train').checked) {
+          const one = Math.round(simDist * 15 + 150);
+          simBestCost = Math.min(simBestCost, one * 2 * simDays);
+        }
+        if (document.getElementById('c-car').checked) {
+          const gas = Math.round(simDist * 2 * simDays * 15 / 15);
+          const parking = simDist > 10 ? 10000 : 5000;
+          simBestCost = Math.min(simBestCost, gas + parking);
+        }
+        if (document.getElementById('c-bike').checked) {
+          const maint = Math.round(simDist > 20 ? 3000 : simDist > 10 ? 1500 : 800);
+          simBestCost = Math.min(simBestCost, maint);
+        }
+        if (document.getElementById('c-walk').checked) {
+          simBestCost = Math.min(simBestCost, 0);
+        }
+
+        simulations.push({label: p.label, cost: simBestCost});
+      });
+
+      let simHtml = `<div style="margin-top:16px;padding:12px;background:#f0f9ff;border-radius:8px;border:1px solid #bfdbfe;">
+        <h4 style="margin:0 0 12px;font-size:13px;font-weight:700;color:#1e3a5f;">💡 What-ifシミュレーション（距離・日数変更時の最適コスト）</h4>
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="background:#dbeafe;border-bottom:2px solid #bfdbfe;">
+              <th style="padding:6px;text-align:left;color:#1e3a5f;font-weight:700;">シナリオ</th>
+              <th style="padding:6px;text-align:right;color:#1e3a5f;font-weight:700;">月額コスト</th>
+              <th style="padding:6px;text-align:right;color:#1e3a5f;font-weight:700;">差分</th>
+            </tr>
+          </thead>
+          <tbody>`;
+
+      const currentPatternIdx = 1;
+      simulations.forEach((s, i) => {
+        const diff = s.cost - simulations[currentPatternIdx].cost;
+        const diffStr = diff === 0 ? '−' : diff > 0 ? `+¥${diff.toLocaleString()}` : `−¥${Math.abs(diff).toLocaleString()}`;
+        const bgColor = i === currentPatternIdx ? '#f0fdf4' : '#fff';
+        const isBetter = diff < 0;
+        simHtml += `<tr style="background:${bgColor};border-bottom:1px solid #dbeafe;">
+          <td style="padding:6px;color:#1f2937;font-weight:${i === currentPatternIdx ? '700' : '400'}">${s.label}</td>
+          <td style="padding:6px;text-align:right;color:#16A34A;font-weight:700;">¥${s.cost.toLocaleString()}</td>
+          <td style="padding:6px;text-align:right;color:${isBetter ? '#16A34A' : '#ef4444'};font-weight:600;">${diffStr}</td>
+        </tr>`;
+      });
+
+      simHtml += `</tbody></table>
+        <p style="margin:8px 0 0;font-size:11px;color:#4b5563;">※ 各手段の最適（最安）コストをシミュレーション。距離・日数の小さな変化でも大きく影響する場合があります。</p>
+      </div>`;
+
+      html += simHtml;
+
       document.getElementById('output').innerHTML = html;
       drawChart(costs);
       drawScoreGauge(best, costs);
-      saveData(dist, days, current, modes);
+      saveData(dist, days, current, target, modes);
       document.getElementById('result').classList.add('show');
       document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     </script>
-
-    <!-- Amazon アフィリエイト -->
-    <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:14px;margin:16px auto;max-width:500px;text-align:center;">
-      <p style="font-size:0.78em;color:#15803d;font-weight:bold;margin-bottom:8px;">📚 関連書籍・グッズをAmazonでチェック</p>
-      <a href="https://www.amazon.co.jp/s?k=通勤コスト最適化+本+おすすめ&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="通勤コスト最適化 関連書籍" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 通勤コスト最適化 関連書籍</a>
-      <a href="https://www.amazon.co.jp/s?k=通勤コスト最適化+入門+書籍&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="通勤コスト最適化 入門ガイド" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 通勤コスト最適化 入門ガイド</a>
-    </div>
-    <!-- rakuten-affiliate-block -->
-    <div style="border:1px solid #BF0000;background:#fff9f9;border-radius:10px;padding:14px;margin:12px auto;max-width:480px;text-align:center;">
-      <p style="font-size:0.85rem;color:#4b5563;margin-bottom:8px;">🛒 関連商品を楽天市場で探す</p>
-      <a href="https://hb.afl.rakuten.co.jp/ichiba/541ad0d2.ce2bed12.541ad0d3.a1a2318c/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%2580%259A%25E5%258B%25A4%2520%25E5%25AE%259A%25E6%259C%259F%2520%25E7%25AF%2580%25E7%25B4%2584%2F&link_type=text" target="_blank" rel="nofollow sponsored noopener"
-         style="display:inline-block;background:#BF0000;color:white;padding:10px 24px;border-radius:8px;font-weight:bold;font-size:14px;text-decoration:none;">
-        楽天市場で「通勤 定期 節約」を検索 →
-      </a>
-    </div>
-    <!-- /rakuten-affiliate-block -->
-
 <div style="border-top:1px solid #e5e7eb;padding:14px 16px 18px;background:#fff;">
   <p style="text-align:center;font-size:11px;font-weight:600;color:#94a3b8;margin:0 0 10px;">スポンサーリンク</p>
   <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:700px;margin:0 auto;">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">日々の生活にハッピーをプラス！《ハピタス》</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ7+18PTPM+1O96+699KI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">《ヨガ》をはじめてみませんか？ホットヨガスタジオLAVA</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3WJ7+18PTPM+1O96+699KI" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=457C4C+C23BCA+0K+10FXXU" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">アフィリエイトならA8.net</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=457C4C+C23BCA+0K+10FXXU" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【じゃらん】国内25,000軒の宿をネットで予約OK！2％ポイント還元！</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" alt="">
     <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">ファイナンシャルアカデミー「お金の教養講座」</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+36YZ3E+3A66+5YRHE" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【販売本数No.1】ウイルスバスター</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B3WJ6+36YZ3E+3A66+5YRHE" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">本・雑誌・ビジネス書が聴ける【audiobook.jp】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ7+C3A6JU+4Z92+65ME9" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【求人数No.1】リゾートバイト・日本を楽しもう【ダイブ】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3WJ7+C3A6JU+4Z92+65ME9" alt="">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ8+4KDYAY+4JGQ+1NQUK2" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">マネーフォワード クラウド開業届</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B3WJ8+4KDYAY+4JGQ+1NQUK2" alt="">
   </div>
 </div>
 <footer style="text-align:center;padding:20px;color:white;font-size:12px;background:#374151;margin-top:8px;">
@@ -585,8 +1146,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <!-- /a8-tcom-hikari -->
 <div style="background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:16px 12px;text-align:center;margin-top:12px;">
   <p style="color:#e0e7ff;font-size:12px;font-weight:600;margin:0 0 4px;">運営：AppADayCreator / Tech&amp;Brace</p>
-  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">累計399個のWebサービスをAI駆動で開発し、現在361件以上を公開・運用しています。
-AI導入・業務自動化・Webサービス開発のご相談はこちら。</p>
+  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">マネー・健康・育児・キャリアなど日常に役立つ無料Webサービスを提供。IT・業務効率化のご相談はこちら。</p>
   <a href="https://tech-and-brace.com/ai-automation?utm_source=appadaycreator&utm_medium=footer&utm_campaign=b2b_cta" target="_blank" rel="noopener" onclick="if(typeof gtag==='function'){gtag('event','b2b_cta_click',{source_page:window.location.pathname,cta_position:'footer',tool_category:document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a')?document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a').innerText:'general',destination:'https://tech-and-brace.com/ai-automation'})}" style="display:inline-block;background:#fff;color:#1e3a5f;font-size:11px;font-weight:700;padding:6px 16px;border-radius:20px;text-decoration:none;">法人・B2B相談はこちら →</a>
 </div>
 </footer>
@@ -648,5 +1208,12 @@ AI導入・業務自動化・Webサービス開発のご相談はこちら。</p
   }, {passive:true});
 })();
 </script>
+<!-- r31-cookie-banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#f1f5f9;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;z-index:9999;font-size:.85rem;box-shadow:0 -2px 10px rgba(0,0,0,.3)">
+<div>当サイトはCookieおよびGoogle Analyticsを使用しています。<a href="/privacy-policy.html" style="color:#60a5fa;text-decoration:underline">プライバシーポリシー</a>をご確認ください。</div>
+<button onclick="document.getElementById('cookie-banner').style.display='none';window.grantConsent && window.grantConsent()" style="background:#3b82f6;color:#fff;border:none;padding:.5rem 1.25rem;border-radius:.375rem;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap">同意して閉じる</button>
+</div>
+<script>if(localStorage.getItem('cookie-consent'))document.getElementById('cookie-banner').style.display='none'</script>
+<script src="/assets/consent-mode.js"></script>
 </body>
 </html>
